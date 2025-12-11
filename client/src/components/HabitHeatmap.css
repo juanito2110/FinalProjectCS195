@@ -1,0 +1,149 @@
+.habit-heatmap {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #30363d;
+}
+
+.heatmap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.heatmap-header h4 {
+  color: #e6edf3;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.heatmap-stats {
+  display: flex;
+  gap: 8px;
+}
+
+.stat-badge {
+  background: #0d1117;
+  color: #e6edf3;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid #30363d;
+}
+
+.heatmap-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 15px;
+}
+
+.heatmap-week {
+  display: flex;
+  gap: 4px;
+}
+
+.heatmap-day {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  border: 1px solid #30363d;
+}
+
+.heatmap-day.empty {
+  background: #161b22;
+}
+
+.heatmap-day.completed {
+  background: rgba(46, 213, 115, 0.9);
+  border-color: rgba(46, 213, 115, 1);
+}
+
+.heatmap-day.today {
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+.heatmap-day:hover {
+  transform: scale(1.15);
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.day-number {
+  color: #e6edf3;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.heatmap-day.empty .day-number {
+  color: #6e7681;
+}
+
+.heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding-top: 10px;
+  border-top: 1px solid #30363d;
+}
+
+.heatmap-legend span {
+  color: #8b949e;
+  font-size: 0.75rem;
+}
+
+.legend-item {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1px solid #30363d;
+}
+
+.legend-item.empty {
+  background: #161b22;
+}
+
+.legend-item.completed {
+  background: rgba(46, 213, 115, 0.9);
+  border-color: rgba(46, 213, 115, 1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heatmap-day {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .day-number {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heatmap-day {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .day-number {
+    font-size: 0.6rem;
+  }
+  
+  .heatmap-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

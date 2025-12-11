@@ -1,0 +1,51 @@
+.habit-chart {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.habit-chart h4 {
+  color: white;
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.custom-tooltip {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-tooltip .label {
+  color: white;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+}
+
+.custom-tooltip .value {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.chart-summary {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.chart-summary span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.chart-summary strong {
+  color: white;
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
